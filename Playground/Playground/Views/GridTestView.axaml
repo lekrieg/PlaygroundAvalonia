@@ -1,0 +1,68 @@
+<UserControl
+    x:Class="Playground.Views.GridTestView"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid Margin="30,86" RowDefinitions="4* * 4* * 2*">
+        <Grid Grid.Row="0" ColumnDefinitions="5* * 5* * 8*">
+            <Border
+                Grid.Column="0"
+                Background="Aqua"
+                CornerRadius="8">
+                <StackPanel Margin="8">
+                    <TextBlock Text="Test1" />
+                    <Grid RowDefinitions="* 7*">
+                        <Border
+                            Grid.Row="0"
+                            Background="Black"
+                            CornerRadius="8 8 0 0">
+                            <TextBlock HorizontalAlignment="Center" Text="Example" />
+                        </Border>
+                        <Border
+                            Grid.Row="1"
+                            BorderBrush="Black"
+                            BorderThickness="1">
+                            <TextBlock Text="asdasdasd" />
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </Border>
+            <Border
+                Grid.Column="2"
+                Background="DodgerBlue"
+                CornerRadius="8" />
+            <Border
+                Grid.Column="4"
+                Background="DarkKhaki"
+                CornerRadius="8" />
+        </Grid>
+        <Grid Grid.Row="2" ColumnDefinitions="* * *">
+            <Border
+                Grid.Column="0"
+                Background="Aqua"
+                CornerRadius="8" />
+            <Border
+                Grid.Column="1"
+                Background="DodgerBlue"
+                CornerRadius="8" />
+            <Border
+                Grid.Column="2"
+                Background="DarkKhaki"
+                CornerRadius="8" />
+        </Grid>
+        <Grid Grid.Row="4" ColumnDefinitions="* *">
+            <Border
+                Grid.Column="0"
+                Background="Aqua"
+                CornerRadius="8" />
+            <Border
+                Grid.Column="1"
+                Background="DodgerBlue"
+                CornerRadius="8" />
+        </Grid>
+    </Grid>
+</UserControl>
